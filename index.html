@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonticons/all.css">
+    <title>Aakash Khamaru</title>
+</head>
+
+<body>
+    <section class="main-page">
+        <aside>
+            <div class="img-holder">
+                <img src="./assets/My-photo.jpg" alt="photo">
+            </div>
+            <h3 class="name">Aakash Khamaru</h3>
+            <div class="social-links">
+                <div class="tooltip"><a class="github" href="#"><i class="fa-brands fa-github fa-2x"></i></a><span class="tooltip-text">Github</span></div>
+                <div class="tooltip"><a class="insta" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a><span class="tooltip-text">Instagram</span></div>
+                <div class="tooltip"><a class="link" href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a><span class="tooltip-text">Linkedin</span></div>
+                <div class="tooltip"><a class="mail" href="#"><i class="fa-solid fa-envelope fa-2x"></i></a><span class="tooltip-text">Gmail</span></div>
+                <div class="tooltip"><a class="resume" href="#"><i class="fa-solid fa-download fa-2x"></i></a><span class="tooltip-text">Download resume</span></div>
+            </div>
+        </aside>
+        <div class="main">
+            <button class="btn"><i class="fa-solid fa-plus fa-2x"></i></button>
+            <div class="more-options">
+                <ul class="opt">
+                    <li><a class="no-line" href='#' data-micromodal-trigger="modal-1"><i class='fa-solid fa-wand-magic-sparkles'></i> Skills</a></li>
+                    <li><a class="no-line" href='#'><i class='fa-solid fa-briefcase'></i> Projects</a></li>
+                </ul>
+            </div>
+            <div class="rest">
+                <p class="subheading">Hey <i class="fa-solid fa-hand"></i>,</p>
+                <p class="subheading">I am Aakash Khamaru.</p>
+                <div id="container">
+                    <span id="text1"></span>
+                    <span id="text2"></span>
+                </div>
+                <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                            <header class="modal__header">
+                                <h2 class="modal__title" id="modal-1-title">
+                                    Skills
+                                </h2>
+                                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                            </header>
+                            <main class="modal__content" id="modal-1-content">
+                                <div class='part-skill'>
+                                    <i class="fa-brands fa-html5 fa-3x"></i>
+                                    <p class="text-center">HTML</p>
+                                </div>
+                                <div class='part-skill'>
+                                    <i class="fa-brands fa-css3-alt fa-3x"></i>
+                                    <p class="text-center">CSS</p>
+                                </div>
+                                <div class='part-skill'>
+                                    <i class="fa-brands fa-js fa-3x"></i>
+                                    <p class="text-center">JavaScript</p>
+                                </div>
+                                <div class='part-skill'>
+                                    <i class="fa-brands fa-bootstrap fa-3x"></i>
+                                    <p class="text-center">Bootstrap</p>
+                                </div>
+                                <div class='part-skill'>
+                                    <i class="fa-brands fa-react fa-3x"></i>
+                                    <p class="text-center">ReactJs</p>
+                                </div>
+                                <div class='part-skill'>
+                                    <i class="fa-brands fa-node fa-3x"></i>
+                                    <p class="text-center">NodeJs</p>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+    </div>
+    </div>
+    <script src="./micromodel.js"></script>
+    <script src="./logic.js"></script>
+    <script type="text/javascript" src="./fonticons/all.js"></script>
+</body>
+
+</html>
