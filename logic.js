@@ -2,6 +2,26 @@ const btn = document.querySelector('button.btn')
 
 const options = document.querySelector('div.more-options')
 
+const phoneNav = document.querySelector('nav.navbar');
+
+
+
+window.addEventListener('load', () => {
+    const width = window.innerWidth;
+    if (width > 800) {
+        phoneNav.style.display = 'none'
+    } else {
+        phoneNav.style.display = 'block'
+    }
+})
+window.addEventListener('resize', () => {
+    const width = window.innerWidth;
+    if (width > 800) {
+        phoneNav.style.display = 'none'
+    } else {
+        phoneNav.style.display = 'block'
+    }
+})
 btn.addEventListener('mouseenter', (e) => {
     options.style.display = 'block'
 })
